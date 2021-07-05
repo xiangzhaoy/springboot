@@ -3,6 +3,8 @@ package com.lou.springboot;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * @author 13
@@ -11,6 +13,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @link http://13blog.site
  */
 @SpringBootApplication
+@EnableScheduling
+@EnableCaching
 @MapperScan("com.lou.springboot.dao")
 public class Application {
 
